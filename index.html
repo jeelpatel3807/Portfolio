@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>Jeel Vachhani | Aspiring AI/ML Engineer | Portfolio</title>
+  <meta name="title" content="Jeel Vachhani | Aspiring AI/ML Engineer | Portfolio">
+  <meta name="description" content="Portfolio of Jeel Vachhani, an MSc IT student and Aspiring AI/ML Engineer at CHARUSAT University. Specialized in NLP, Machine Learning, Python, and data-driven systems.">
+  <meta name="keywords" content="Jeel Vachhani, AI/ML Engineer, Machine Learning, Python Developer, NLP, CHARUSAT, Fake News Detection, SBERT, Data Science Portfolio">
+  <meta name="author" content="Jeel Vachhani">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jeelvachhani.github.io/">
+  <meta property="og:title" content="Jeel Vachhani | Aspiring AI/ML Engineer">
+  <meta property="og:description" content="MSc IT student at CHARUSAT University. Building practical AI and ML solutions using Python, NLP, and data engineering.">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Jeel Vachhani | Aspiring AI/ML Engineer">
+  <meta property="twitter:description" content="MSc IT student at CHARUSAT University. Building practical AI and ML solutions using Python, NLP, and data engineering.">
+
+  <!-- Favicon (Text / Initial SVG) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%236366f1'/><stop offset='50%' stop-color='%2306b6d4'/><stop offset='100%' stop-color='%23ec4899'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='%230b0d19'/><rect x='3' y='3' width='94' height='94' rx='21' fill='none' stroke='url(%23g)' stroke-width='4'/><text x='50%' y='62%' font-family='sans-serif' font-size='42' font-weight='800' fill='url(%23g)' text-anchor='middle'>JV</text></svg>">
+
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 CDN for Crisp Vector Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Core CSS (No Frameworks, Pure CSS3) -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Dynamic Ambient Mesh Background Layer -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+  <div class="ambient-glow glow-4" aria-hidden="true"></div>
+
+  <!-- Interactive Neural Canvas -->
+  <canvas id="neuralCanvas" class="neural-canvas" aria-hidden="true"></canvas>
+
+  <!-- Interactive Cursor Glow Spot -->
+  <div id="cursorGlow" class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress-container">
+    <div id="scrollProgress" class="scroll-progress-bar"></div>
+  </div>
+
+  <!-- FLOATING MODERN NAVBAR -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="navbar">
+      <a href="#hero" class="brand-logo" aria-label="Jeel Vachhani Home">
+        <span class="logo-box">
+          <span class="logo-code-sym">&lt;</span>JV<span class="logo-code-sym">&gt;</span>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Jeel Vachhani</span>
+          <span class="brand-tag">MSc IT • AI/ML</span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <!-- Resume CTA -->
+        <a href="assets/resume/Jeel_Vachhani_Resume.pdf" class="btn btn-outline-nav js-resume-link" download="Jeel_Vachhani_Resume.pdf" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileNavToggle" class="mobile-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        
+        <!-- Left Hero Content -->
+        <div class="hero-content">
+          <!-- Status Pill -->
+          <div class="hero-badge reveal">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Available for AI/ML Opportunities & Collaborations</span>
+          </div>
+
+          <!-- Hero Headings -->
+          <div class="hero-intro reveal">
+            <span class="hero-greeting">HELLO, I'M</span>
+            <h1 class="hero-name">JEEL VACHHANI</h1>
+            <h2 class="hero-role">
+              ASPIRING AI/ML ENGINEER
+            </h2>
+          </div>
+
+          <!-- Description -->
+          <p class="hero-description reveal">
+            MSc IT student at <strong>CHARUSAT University</strong>. I build practical AI and machine learning solutions using <strong>Python, NLP, computer vision</strong>, and data-driven techniques—focusing on rigorous methodology, clean architecture, and real-world utility.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <i class="fa-solid fa-arrow-down-long"></i>
+            </a>
+
+            <a href="assets/resume/Jeel_Vachhani_Resume.pdf" class="btn btn-secondary js-resume-link" download="Jeel_Vachhani_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <i class="fa-regular fa-file-pdf"></i>
+              <span>Resume</span>
+            </a>
+
+            <a href="#contact" class="btn btn-glass">
+              <i class="fa-regular fa-comments"></i>
+              <span>Let's Talk</span>
+            </a>
+          </div>
+
+          <!-- Social Quick Links Bar -->
+          <div class="hero-socials reveal">
+            <span class="socials-label">Connect:</span>
+            <div class="social-links-group">
+              <a href="ADD_GITHUB_URL" target="_blank" rel="noopener noreferrer" class="social-icon-btn js-github-link" aria-label="GitHub Profile" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="ADD_LINKEDIN_URL" target="_blank" rel="noopener noreferrer" class="social-icon-btn js-linkedin-link" aria-label="LinkedIn Profile" title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:ADD_EMAIL" class="social-icon-btn js-email-link" aria-label="Email Me" title="Email">
+                <i class="fa-regular fa-envelope"></i>
+              </a>
+              <a href="https://wa.me/ADD_WHATSAPP_NUMBER" target="_blank" rel="noopener noreferrer" class="social-icon-btn js-whatsapp-link" aria-label="WhatsApp Chat" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual Card -->
+        <div class="hero-visual reveal">
+          <div class="terminal-card">
+            <!-- Terminal Header -->
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="terminal-title">
+                <i class="fa-solid fa-brain terminal-icon"></i>
+                <span>jeel_vachhani_pipeline.py</span>
+              </div>
+              <div class="terminal-pill">Python 3.10</div>
+            </div>
+
+            <!-- Terminal Code Body -->
+            <div class="terminal-body">
+              <div class="code-line"><span class="c-dim"># Candidate Technical Profile</span></div>
+              <div class="code-line"><span class="c-keyword">from</span> <span class="c-mod">charusat</span> <span class="c-keyword">import</span> <span class="c-class">MScInformationTechnology</span></div>
+              <div class="code-line"><span class="c-keyword">from</span> <span class="c-mod">sklearn.pipeline</span> <span class="c-keyword">import</span> <span class="c-class">FeatureUnion</span></div>
+              <div class="code-line"><span class="c-keyword">from</span> <span class="c-mod">sentence_transformers</span> <span class="c-keyword">import</span> <span class="c-class">SentenceTransformer</span></div>
+              <div class="code-line empty-line"></div>
+              <div class="code-line"><span class="c-var">engineer</span> = {</div>
+              <div class="code-line indent-1"><span class="c-prop">"name"</span>: <span class="c-str">"Jeel Vachhani"</span>,</div>
+              <div class="code-line indent-1"><span class="c-prop">"focus"</span>: [<span class="c-str">"AI/ML"</span>, <span class="c-str">"NLP"</span>, <span class="c-str">"Deep Learning"</span>],</div>
+              <div class="code-line indent-1"><span class="c-prop">"primary_stack"</span>: [<span class="c-str">"Python"</span>, <span class="c-str">"Scikit-learn"</span>, <span class="c-str">"SBERT"</span>],</div>
+              <div class="code-line indent-1"><span class="c-prop">"degree"</span>: <span class="c-str">"MSc IT @ CHARUSAT University"</span>,</div>
+              <div class="code-line indent-1"><span class="c-prop">"current_status"</span>: <span class="c-status">"Building practical AI systems"</span></div>
+              <div class="code-line">}</div>
+              <div class="code-line empty-line"></div>
+              <div class="code-line"><span class="c-dim"># Pipeline Execution Status</span></div>
+              <div class="code-line terminal-output">
+                <span class="c-prompt">&gt;&gt;&gt;</span> <span class="c-output-text">Status: 200 OK • Ready to collaborate</span>
+              </div>
+            </div>
+
+            <!-- Terminal Interactive Footer -->
+            <div class="terminal-footer">
+              <div class="status-indicator">
+                <span class="pulse-indicator"></span>
+                <span>Active Research: SBERT + TF-IDF Fusion</span>
+              </div>
+              <a href="#research" class="terminal-link">
+                <span>Inspect Methodology</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-regular fa-user"></i> Background</span>
+          <h2 class="section-title">A little about me</h2>
+          <p class="section-subtitle">
+            Academic foundation, technical philosophy, and aspirations in artificial intelligence.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Main Narrative Column -->
+          <div class="about-card glass-panel reveal">
+            <div class="about-body">
+              <p class="lead-text">
+                I am an <strong>MSc Information Technology</strong> student at <strong>CHARUSAT University</strong> with a focused career ambition in <strong>Artificial Intelligence, Machine Learning, and Data-Driven Software Development</strong>.
+              </p>
+              <p>
+                My journey centers on building real-world machine learning systems rather than just training theoretical models on clean toy datasets. I enjoy the end-to-end craft: from understanding statistical distributions and engineering discriminative features to evaluating failure cases, optimizing models, and wrapping algorithms into clean interfaces.
+              </p>
+              <p>
+                My primary technical curiosities lie in <strong>Natural Language Processing (NLP)</strong>—specifically exploring how dense transformer representations (like Sentence-BERT) can be fused with lexical signals (like TF-IDF) for robust classification—as well as <strong>computer vision</strong>, unsupervised anomaly detection, and recommendation algorithms.
+              </p>
+              <p>
+                As a student and aspiring engineer, I prioritize transparency, sound experimental methodology, and continuous learning. I am seeking entry-level AI/ML roles, internships, and research collaborations where I can contribute actively and grow alongside seasoned practitioners.
+              </p>
+            </div>
+
+            <!-- Highlights Checklist -->
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-circle-check highlight-icon"></i>
+                <div>
+                  <strong>MSc IT Candidate</strong>
+                  <span>Deepening computer science and applied AI fundamentals at CHARUSAT</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-circle-check highlight-icon"></i>
+                <div>
+                  <strong>Applied NLP & ML Exploration</strong>
+                  <span>Hands-on work with transformers, embeddings, and supervised models</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-circle-check highlight-icon"></i>
+                <div>
+                  <strong>Practical Engineering Focus</strong>
+                  <span>Clean Python code, reproducible workflows, and interactive deployment</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic & Focus Sidebar Cards -->
+          <div class="about-sidebar">
+            <!-- Focus Card -->
+            <div class="info-card glass-panel reveal">
+              <div class="info-card-header">
+                <div class="info-icon-box purple-box">
+                  <i class="fa-solid fa-compass"></i>
+                </div>
+                <div>
+                  <h3 class="info-card-title">Technical Focus</h3>
+                  <span class="info-card-sub">Core Interest Domains</span>
+                </div>
+              </div>
+              <ul class="info-list">
+                <li><i class="fa-solid fa-chevron-right"></i> Natural Language Processing (NLP)</li>
+                <li><i class="fa-solid fa-chevron-right"></i> Semantic Search & Embeddings</li>
+                <li><i class="fa-solid fa-chevron-right"></i> Computer Vision & Audio ML</li>
+                <li><i class="fa-solid fa-chevron-right"></i> Anomaly & Pattern Detection</li>
+                <li><i class="fa-solid fa-chevron-right"></i> Full-Stack AI Tooling (Flask, Streamlit)</li>
+              </ul>
+            </div>
+
+            <!-- University Card -->
+            <div class="info-card glass-panel reveal">
+              <div class="info-card-header">
+                <div class="info-icon-box cyan-box">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div>
+                  <h3 class="info-card-title">University</h3>
+                  <span class="info-card-sub">Academic Base</span>
+                </div>
+              </div>
+              <p class="uni-name">CHARUSAT University</p>
+              <p class="uni-desc">Department of Information Technology, pursuing Master of Science in IT.</p>
+              <div class="uni-tag">
+                <i class="fa-solid fa-award"></i>
+                <span>MSc Information Technology</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-solid fa-microchip"></i> Toolkit</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">
+            Languages, machine learning libraries, data analysis toolkits, and software tools I actively use.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="skills-filter-wrapper reveal">
+          <div class="filter-pills" role="tablist">
+            <button class="filter-btn active" data-filter="all" role="tab">All Skills</button>
+            <button class="filter-btn" data-filter="programming" role="tab">Programming</button>
+            <button class="filter-btn" data-filter="aiml" role="tab">AI / ML</button>
+            <button class="filter-btn" data-filter="data" role="tab">Data</button>
+            <button class="filter-btn" data-filter="tools" role="tab">Tools</button>
+          </div>
+        </div>
+
+        <!-- Skills Grid Container -->
+        <div class="skills-grid" id="skillsGrid">
+
+          <!-- PROGRAMMING -->
+          <div class="skill-category-block" data-category="programming">
+            <h3 class="category-heading">
+              <i class="fa-solid fa-code"></i>
+              <span>Programming</span>
+            </h3>
+            <div class="skill-cards-row">
+              <div class="skill-card glass-panel reveal">
+                <div class="skill-icon-wrapper" style="--skill-color: #3776ab;">
+                  <i class="fa-brands fa-python"></i>
+                </div>
+                <div class="skill-info">
+                  <h4 class="skill-name">Python</h4>
+                  <p class="skill-desc">Primary language for ML modeling, NLP, data analysis, and script automation.</p>
+                </div>
+              </div>
+
+              <div class="skill-card glass-panel reveal">
+                <div class="skill-icon-wrapper" style="--skill-color: #f89820;">
+                  <i class="fa-brands fa-java"></i>
+                </div>
+                <div class="skill-info">
+                  <h4 class="skill-name">Java</h4>
+                  <p class="skill-desc">Object-oriented programming, data structures, and core software engineering concepts.</p>
+                </div>
+              </div>
+
+              <div class="skill-card glass-panel reveal">
+                <div class="skill-icon-wrapper" style="--skill-color: #00758f;">
+                  <i class="fa-solid fa-database"></i>
+                </div>
+                <div class="skill-info">
+                  <h4 class="skill-name">SQL</h4>
+                  <p class="skill-desc">Relational querying, dataset joining, schema design, and analytical aggregation.</p>
+                </div>
+              </div>
+
+              <div class="skill-card glass-panel reveal">
+                <div class="skill-icon-wrapper" style="--skill-color: #e34f26;">
+                  <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="skill-info">
+                  <h4 class="skill-name">HTML</h4>
+                  <p class="skill-desc">Semantic document structuring, accessibility, and modern responsive layouts.</p>
+                </div>
+              </div>
+
+              <div class="skill-card glass-panel reveal">
+                <div class="skill-icon-wrapper" style="--skill-color: #264de4;">
+                  <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <div class="skill-info">
+                  <h4 class="skill-name">CSS</h4>
+                  <p class="skill-desc">Modern responsive design, Flexbox, Grid systems, animations, and custom styling.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI / ML -->
+          <div class="skill-category-block" data-category="aiml">
+            <h3 class="category-heading">
+              <i class="fa-solid fa-brain"></i>
+              <span>AI / Machine Learning</span>
+            </h3>
+            <div class="skill-cards-row">
+              <div class="skill-card glass-panel reveal">
+                <div class="skill-icon-wrapper" style="--skill-color: #8b5cf6;">
+                  <i class="fa-solid fa-network-wired"></i>
+                </div>
+                <div class="skill-info">
+                  <h4 class="skill-name">Machine Learning</h4>
+                  <p class="skill-desc">Supervised/unsupervised algorithms, evaluation metrics, cross-validation, and tuning.</p>
+                </div>
+              </div>
+
+              <div class="skill-card glass-panel reveal">
+                <div class="skill-icon-wrapper" style="--skill-color: #06b6d4;">
+                  <i class="fa-solid fa-language"></i>
+                </div>
+                <div class="skill-info">
+                  <h4 class="skill-name">NLP</h4>
+                  <p class="skill-desc">Text preprocessing, TF-IDF, tokenization, semantic embeddings (SBERT), and text classification.</p>
+                </div>
+              </div>
+
+              <div class="skill-card glass-panel reveal">
+                <div class="skill-icon-wrapper" style="--skill-color: #ec4899;">
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+                <div class="skill-info">
+                  <h4 class="skill-name">Computer Vision</h4>
+                  <p class="skill-desc">Image processing fundamentals, spatial filters, and convolutional feature representations.</p>
+                </div>
+              </div>
+
+              <div class="skill-card glass-panel reveal">
+                <div class="skill-icon-wrapper" style="--skill-color: #6366f1;">
+                  <i class="fa-solid fa-diagram-project"></i>
+                </div>
+                <div class="skill-info">
+                  <h4 class="skill-name">Deep Learning</h4>
+                  <p class="skill-desc">Neural architectures, backpropagation, activation functions, and transfer learning concepts.</p>
+                </div>
+              </div>
+
+              <div class="skill-card glass-panel reveal">
+                <div class="skill-icon-wrapper" style="--skill-color: #f59e0b;">
+                  <i class="fa-solid fa-gears"></i>
+                </div>
+                <div class="skill-info">
+                  <h4 class="skill-name">Scikit-learn</h4>
+                  <p class="skill-desc">Standard pipelines, estimators, ensemble methods, clustering, and model persistence.</p>
+                </div>
+              </div>
+
+              <div class="skill-card glass-panel reveal">
+                <div class="skill-icon-wrapper" style="--skill-color: #ff6f00;">
+                  <i class="fa-solid fa-cubes"></i>
+                </div>
+                <div class="skill-info">
+                  <h4 class="skill-name">TensorFlow</h4>
+                  <p class="skill-desc">Model definition via Keras API, training loops, callback strategies, and evaluations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DATA -->
+          <div class="skill-category-block" data-category="data">
+            <h3 class="category-heading">
+              <i class="fa-solid fa-chart-pie"></i>
+              <span>Data Analysis & Visualization</span>
+            </h3>
+            <div class="skill-cards-row">
+              <div class="skill-card glass-panel reveal">
+                <div class="skill-icon-wrapper" style="--skill-color: #4dabcf;">
+                  <i class="fa-solid fa-calculator"></i>
+                </div>
+                <div class="skill-info">
+                  <h4 class="skill-name">NumPy</h4>
+                  <p class="skill-desc">Vectorized array operations, linear algebra transformations, and multidimensional math.</p>
+                </div>
+              </div>
+
+              <div class="skill-card glass-panel reveal">
+                <div class="skill-icon-wrapper" style="--skill-color: #150458;">
+                  <i class="fa-solid fa-table"></i>
+                </div>
+                <div class="skill-info">
+                  <h4 class="skill-name">Pandas</h4>
+                  <p class="skill-desc">Data wrangling, cleaning missing values, grouping, pivot tables, and feature extraction.</p>
+                </div>
+              </div>
+
+              <div class="skill-card glass-panel reveal">
+                <div class="skill-icon-wrapper" style="--skill-color: #11557c;">
+                  <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="skill-info">
+                  <h4 class="skill-name">Matplotlib</h4>
+                  <p class="skill-desc">Exploratory data visualizations, feature distribution charts, and model confusion plots.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TOOLS -->
+          <div class="skill-category-block" data-category="tools">
+            <h3 class="category-heading">
+              <i class="fa-solid fa-wrench"></i>
+              <span>Development Tools & Frameworks</span>
+            </h3>
+            <div class="skill-cards-row">
+              <div class="skill-card glass-panel reveal">
+                <div class="skill-icon-wrapper" style="--skill-color: #f05032;">
+                  <i class="fa-brands fa-git-alt"></i>
+                </div>
+                <div class="skill-info">
+                  <h4 class="skill-name">Git</h4>
+                  <p class="skill-desc">Branching workflows, version control, commit conventions, and repository tracking.</p>
+                </div>
+              </div>
+
+              <div class="skill-card glass-panel reveal">
+                <div class="skill-icon-wrapper" style="--skill-color: #ffffff;">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="skill-info">
+                  <h4 class="skill-name">GitHub</h4>
+                  <p class="skill-desc">Code hosting, open-source documentation, release tracking, and GitHub Pages deployment.</p>
+                </div>
+              </div>
+
+              <div class="skill-card glass-panel reveal">
+                <div class="skill-icon-wrapper" style="--skill-color: #f37626;">
+                  <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div class="skill-info">
+                  <h4 class="skill-name">Jupyter</h4>
+                  <p class="skill-desc">Interactive notebook experimentation, rapid ML prototyping, and visual analysis.</p>
+                </div>
+              </div>
+
+              <div class="skill-card glass-panel reveal">
+                <div class="skill-icon-wrapper" style="--skill-color: #f9ab00;">
+                  <i class="fa-solid fa-cloud"></i>
+                </div>
+                <div class="skill-info">
+                  <h4 class="skill-name">Google Colab</h4>
+                  <p class="skill-desc">Cloud-accelerated notebook computation, GPU experiment execution, and reproducible runs.</p>
+                </div>
+              </div>
+
+              <div class="skill-card glass-panel reveal">
+                <div class="skill-icon-wrapper" style="--skill-color: #007acc;">
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <div class="skill-info">
+                  <h4 class="skill-name">VS Code</h4>
+                  <p class="skill-desc">Primary editor configured with Python virtual environments, linting, and Git integration.</p>
+                </div>
+              </div>
+
+              <div class="skill-card glass-panel reveal">
+                <div class="skill-icon-wrapper" style="--skill-color: #1b6ac6;">
+                  <i class="fa-solid fa-square-binary"></i>
+                </div>
+                <div class="skill-info">
+                  <h4 class="skill-name">NetBeans</h4>
+                  <p class="skill-desc">Java desktop application development, compiler management, and debugging.</p>
+                </div>
+              </div>
+
+              <div class="skill-card glass-panel reveal">
+                <div class="skill-icon-wrapper" style="--skill-color: #f24e1e;">
+                  <i class="fa-brands fa-figma"></i>
+                </div>
+                <div class="skill-info">
+                  <h4 class="skill-name">Figma</h4>
+                  <p class="skill-desc">UI wireframing, application interface prototyping, and user workflow layout.</p>
+                </div>
+              </div>
+
+              <div class="skill-card glass-panel reveal">
+                <div class="skill-icon-wrapper" style="--skill-color: #000000;">
+                  <i class="fa-solid fa-server"></i>
+                </div>
+                <div class="skill-info">
+                  <h4 class="skill-name">Flask</h4>
+                  <p class="skill-desc">Lightweight Python web framework for exposing machine learning models via REST endpoints.</p>
+                </div>
+              </div>
+
+              <div class="skill-card glass-panel reveal">
+                <div class="skill-icon-wrapper" style="--skill-color: #ff4b4b;">
+                  <i class="fa-solid fa-sliders"></i>
+                </div>
+                <div class="skill-info">
+                  <h4 class="skill-name">Streamlit</h4>
+                  <p class="skill-desc">Rapid web deployment for interactive ML demos, data dashboards, and parameter testing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION (DOMINANT SECTION) -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-solid fa-folder-open"></i> Portfolio Work</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">
+            Hands-on machine learning systems, research explorations, and applied software engineering projects.
+          </p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filters reveal">
+          <button class="proj-filter-btn active" data-proj-filter="all">All Projects</button>
+          <button class="proj-filter-btn" data-proj-filter="nlp">NLP & Research</button>
+          <button class="proj-filter-btn" data-proj-filter="aiml">AI / ML</button>
+          <button class="proj-filter-btn" data-proj-filter="data">Data Analytics</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- PROJECT 1: FEATURED (Fake News Detection) -->
+          <article class="project-card featured-project glass-panel reveal" data-category="nlp aiml">
+            <div class="project-inner-grid">
+              
+              <!-- Project Architecture / Visual Banner -->
+              <div class="project-visual-wrapper">
+                <div class="project-schematic">
+                  <div class="schematic-header">
+                    <span class="schematic-pill"><i class="fa-solid fa-microscope"></i> FEATURED RESEARCH</span>
+                    <span class="schematic-lang">Python • SBERT • Scikit-learn</span>
+                  </div>
+
+                  <!-- Clean Data-Driven Architecture Visual -->
+                  <div class="pipeline-visual">
+                    <div class="pipe-node node-input">
+                      <i class="fa-regular fa-newspaper"></i>
+                      <span>Raw Text</span>
+                    </div>
+                    <div class="pipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    
+                    <div class="pipe-split">
+                      <div class="split-branch branch-sbert">
+                        <span class="branch-tag">Semantic</span>
+                        <div class="pipe-node node-sub">
+                          <i class="fa-solid fa-brain"></i>
+                          <span>SBERT (384-d)</span>
+                        </div>
+                      </div>
+                      <div class="split-branch branch-tfidf">
+                        <span class="branch-tag">Lexical</span>
+                        <div class="pipe-node node-sub">
+                          <i class="fa-solid fa-font"></i>
+                          <span>TF-IDF (5000)</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="pipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="pipe-node node-fusion">
+                      <i class="fa-solid fa-layer-group"></i>
+                      <span>Feature Fusion</span>
+                    </div>
+                    <div class="pipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="pipe-node node-output">
+                      <i class="fa-solid fa-shield-halved"></i>
+                      <span>Classifier</span>
+                    </div>
+                  </div>
+
+                  <div class="schematic-footer">
+                    <span>Evaluated across: Logistic Regression • SVM • Random Forest</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Metadata -->
+              <div class="project-details">
+                <div class="project-meta-top">
+                  <span class="project-category-badge badge-purple">NLP & Research</span>
+                  <span class="project-featured-label">Featured Project</span>
+                </div>
+
+                <h3 class="project-title">
+                  <a href="projects/fake-news.html">Enhancing Fake News Detection via SBERT and TF-IDF Feature Fusion</a>
+                </h3>
+
+                <p class="project-desc">
+                  A hybrid NLP research approach combining dense semantic representations from Sentence-BERT with sparse lexical TF-IDF n-grams to improve classification performance against misleading and disinformation text.
+                </p>
+
+                <div class="project-feature-bullets">
+                  <div class="bullet-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Overcomes pure n-gram context blindness and pure transformer keyword loss</span>
+                  </div>
+                  <div class="bullet-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Rigorous comparative evaluation across Logistic Regression, Linear SVM, and Random Forest</span>
+                  </div>
+                  <div class="bullet-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Complete documentation of dataset preprocessing, feature concatenation, and error distributions</span>
+                  </div>
+                </div>
+
+                <div class="project-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">SBERT</span>
+                  <span class="tech-tag">TF-IDF</span>
+                  <span class="tech-tag">Scikit-learn</span>
+                  <span class="tech-tag">NLP</span>
+                  <span class="tech-tag">SVM</span>
+                  <span class="tech-tag">Random Forest</span>
+                </div>
+
+                <div class="project-actions">
+                  <a href="projects/fake-news.html" class="btn btn-primary btn-sm">
+                    <span>Project Details</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                  <a href="ADD_GITHUB_URL" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm js-github-link">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub Repo</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Hidden Business Loss Detector -->
+          <article class="project-card glass-panel reveal" data-category="aiml data">
+            <div class="card-schematic-top cyan-accent">
+              <div class="schematic-mini-header">
+                <span class="mini-tag">Retail Analytics & Unsupervised ML</span>
+                <span class="mini-lang">Python • Streamlit</span>
+              </div>
+              <div class="analytics-viz-mockup">
+                <div class="viz-bars">
+                  <div class="viz-bar" style="height: 65%;"></div>
+                  <div class="viz-bar" style="height: 85%;"></div>
+                  <div class="viz-bar highlight-bar" style="height: 38%;" title="Anomaly Cluster"></div>
+                  <div class="viz-bar" style="height: 92%;"></div>
+                  <div class="viz-bar" style="height: 74%;"></div>
+                  <div class="viz-bar highlight-bar" style="height: 30%;" title="Loss Pattern"></div>
+                </div>
+                <div class="viz-legend">
+                  <span><i class="fa-solid fa-circle" style="color: var(--accent-cyan);"></i> Normal Behavior</span>
+                  <span><i class="fa-solid fa-circle" style="color: var(--accent-pink);"></i> Potential Loss Cluster</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <div class="project-meta-top">
+                <span class="project-category-badge badge-cyan">AI / ML • Data</span>
+              </div>
+
+              <h3 class="project-title">
+                <a href="projects/business-loss.html">Hidden Business Loss Detector</a>
+              </h3>
+
+              <p class="project-desc">
+                An ML-based retail analytics system designed to identify non-obvious business behavior clusters, detect statistical transaction outliers, and uncover hidden loss patterns in commercial sales operations.
+              </p>
+
+              <div class="project-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">KMeans</span>
+                <span class="tech-tag">StandardScaler</span>
+                <span class="tech-tag">Streamlit</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="projects/business-loss.html" class="btn btn-glass btn-sm">
+                  <span>Project Details</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="ADD_GITHUB_URL" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm js-github-link">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Bird Sound Classification -->
+          <article class="project-card glass-panel reveal" data-category="aiml">
+            <div class="card-schematic-top green-accent">
+              <div class="schematic-mini-header">
+                <span class="mini-tag">Audio Machine Learning & CNN</span>
+                <span class="mini-lang">Python • Librosa</span>
+              </div>
+              <div class="audio-viz-mockup">
+                <div class="spectrogram-waves">
+                  <span class="wave-line wl-1"></span>
+                  <span class="wave-line wl-2"></span>
+                  <span class="wave-line wl-3"></span>
+                  <span class="wave-line wl-4"></span>
+                  <span class="wave-line wl-5"></span>
+                  <span class="wave-line wl-6"></span>
+                  <span class="wave-line wl-7"></span>
+                  <span class="wave-line wl-8"></span>
+                </div>
+                <div class="audio-label">
+                  <i class="fa-solid fa-wave-square"></i>
+                  <span>Mel-Spectrogram 128-band Feature Array</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <div class="project-meta-top">
+                <span class="project-category-badge badge-green">Audio ML • Deep Learning</span>
+              </div>
+
+              <h3 class="project-title">
+                <a href="projects/bird-sound.html">Bird Sound Classification</a>
+              </h3>
+
+              <p class="project-desc">
+                An audio bioacoustic recognition system converting field soundscapes into Log-Mel Spectrogram representations and classifying avian vocalizations using deep convolutional neural features.
+              </p>
+
+              <div class="project-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">Librosa</span>
+                <span class="tech-tag">CNN</span>
+                <span class="tech-tag">Mel-Spectrograms</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="projects/bird-sound.html" class="btn btn-glass btn-sm">
+                  <span>Project Details</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="ADD_GITHUB_URL" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm js-github-link">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Customer Churn Prediction -->
+          <article class="project-card glass-panel reveal" data-category="aiml data">
+            <div class="card-schematic-top orange-accent">
+              <div class="schematic-mini-header">
+                <span class="mini-tag">Supervised Classification Pipeline</span>
+                <span class="mini-lang">Python • XGBoost</span>
+              </div>
+              <div class="churn-viz-mockup">
+                <div class="churn-flow">
+                  <div class="cf-box">Imbalanced Data</div>
+                  <div class="cf-arrow"><i class="fa-solid fa-right-long"></i></div>
+                  <div class="cf-box cf-hl">SMOTE Sampling</div>
+                  <div class="cf-arrow"><i class="fa-solid fa-right-long"></i></div>
+                  <div class="cf-box">XGBoost Optimized</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <div class="project-meta-top">
+                <span class="project-category-badge badge-orange">Machine Learning • Data</span>
+              </div>
+
+              <h3 class="project-title">
+                <a href="projects/churn.html">Customer Churn Prediction</a>
+              </h3>
+
+              <p class="project-desc">
+                An end-to-end customer churn classification pipeline addressing real-world class imbalance with SMOTE, performing rigorous feature engineering, and optimizing gradient boosted trees via GridSearchCV.
+              </p>
+
+              <div class="project-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">XGBoost</span>
+                <span class="tech-tag">SMOTE</span>
+                <span class="tech-tag">GridSearchCV</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="projects/churn.html" class="btn btn-glass btn-sm">
+                  <span>Project Details</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="ADD_GITHUB_URL" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm js-github-link">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: Movie Recommendation System -->
+          <article class="project-card glass-panel reveal" data-category="aiml data">
+            <div class="card-schematic-top pink-accent">
+              <div class="schematic-mini-header">
+                <span class="mini-tag">Recommendation Algorithms</span>
+                <span class="mini-lang">Python • SVD • Streamlit</span>
+              </div>
+              <div class="recsys-viz-mockup">
+                <div class="recsys-matrix">
+                  <span class="matrix-cell mc-1">Cosine Sim</span>
+                  <span class="matrix-cell mc-plus">+</span>
+                  <span class="matrix-cell mc-2">SVD Latent Matrix</span>
+                  <span class="matrix-cell mc-eq">=</span>
+                  <span class="matrix-cell mc-top">Top-N Recommendations</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <div class="project-meta-top">
+                <span class="project-category-badge badge-pink">Algorithms • Data</span>
+              </div>
+
+              <h3 class="project-title">
+                <a href="projects/movie-recommendation.html">Movie Recommendation System</a>
+              </h3>
+
+              <p class="project-desc">
+                A recommendation system implementing content-based cosine similarity alongside matrix factorization (Singular Value Decomposition) to deliver personalized title discovery through an interactive Streamlit UI.
+              </p>
+
+              <div class="project-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Cosine Similarity</span>
+                <span class="tech-tag">Surprise</span>
+                <span class="tech-tag">SVD</span>
+                <span class="tech-tag">Streamlit</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="projects/movie-recommendation.html" class="btn btn-glass btn-sm">
+                  <span>Project Details</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="ADD_GITHUB_URL" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm js-github-link">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESEARCH SPOTLIGHT SECTION -->
+    <section id="research" class="section research-section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-solid fa-flask"></i> Technical Exploration</span>
+          <h2 class="section-title">Research Spotlight</h2>
+          <p class="section-subtitle">
+            Methodology-driven independent study focusing on hybrid feature spaces for natural language verification.
+          </p>
+        </div>
+
+        <div class="research-banner glass-panel reveal">
+          <div class="research-header-row">
+            <div>
+              <span class="research-status-pill">Independent Research Project • 2026–Present</span>
+              <h3 class="research-main-title">
+                Enhancing Fake News Detection via SBERT and TF-IDF Feature Fusion
+              </h3>
+            </div>
+            <a href="projects/fake-news.html" class="btn btn-secondary btn-sm">
+              <span>Read Full Breakdown</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+
+          <div class="research-content-grid">
+            <!-- Left Narrative -->
+            <div class="research-narrative">
+              <h4 class="research-subheading">Core Research Motivation</h4>
+              <p>
+                Natural language deception detection often suffers from a fundamental trade-off: traditional bag-of-words / TF-IDF methods capture specific deceptive terminology and domain keywords but miss nuanced semantic context. Conversely, dense contextual embeddings (such as Sentence-BERT) capture contextual meaning but can dilute crucial lexical cues.
+              </p>
+              <p>
+                This project investigates a <strong>late feature fusion strategy</strong>: concatenating dense 384-dimensional Sentence-BERT embeddings with high-discriminative TF-IDF n-grams (up to 5,000 features), subsequently feeding the merged representation into regularized linear and ensemble classifiers.
+              </p>
+
+              <div class="research-key-points">
+                <div class="rk-point">
+                  <div class="rk-icon"><i class="fa-solid fa-microchip"></i></div>
+                  <div>
+                    <strong>Transformer + Statistical Fusion</strong>
+                    <span>Jointly preserves contextual intent and critical deceptive keywords.</span>
+                  </div>
+                </div>
+                <div class="rk-point">
+                  <div class="rk-icon"><i class="fa-solid fa-chart-column"></i></div>
+                  <div>
+                    <strong>Empirical Evaluation Protocol</strong>
+                    <span>Validated across standard benchmarks using stratified splits, accuracy, precision, and recall.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Architecture Card -->
+            <div class="research-card-right glass-panel">
+              <h4 class="research-subheading">Architecture Overview</h4>
+              
+              <div class="architecture-flow-box">
+                <div class="af-step">
+                  <span class="af-num">01</span>
+                  <div class="af-desc">
+                    <strong>Text Preprocessing</strong>
+                    <span>Noise removal, lowercasing, and length standardization</span>
+                  </div>
+                </div>
+                <div class="af-divider"></div>
+                <div class="af-step">
+                  <span class="af-num">02</span>
+                  <div class="af-desc">
+                    <strong>Dual-Stream Feature Extraction</strong>
+                    <span>Stream A: `all-MiniLM-L6-v2` (384-d) • Stream B: TF-IDF (1-2 ngrams)</span>
+                  </div>
+                </div>
+                <div class="af-divider"></div>
+                <div class="af-step">
+                  <span class="af-num">03</span>
+                  <div class="af-desc">
+                    <strong>Feature Space Concatenation</strong>
+                    <span>Sparse-to-dense aligned concatenation matrix</span>
+                  </div>
+                </div>
+                <div class="af-divider"></div>
+                <div class="af-step">
+                  <span class="af-num">04</span>
+                  <div class="af-desc">
+                    <strong>Multi-Model Classification</strong>
+                    <span>Logistic Regression, Linear SVM, and Random Forest comparison</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="research-tech-chips">
+                <span>Python</span>
+                <span>Sentence-BERT</span>
+                <span>Scikit-learn</span>
+                <span>TF-IDF</span>
+                <span>NLTK</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Journey</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">
+            Formal graduate education in Computer Science & Information Technology.
+          </p>
+        </div>
+
+        <div class="education-timeline max-w-timeline">
+          <!-- Timeline Card -->
+          <div class="edu-card glass-panel reveal">
+            <div class="edu-card-top">
+              <div class="edu-badge-icon">
+                <i class="fa-solid fa-university"></i>
+              </div>
+              <div class="edu-titles">
+                <span class="edu-degree">Master of Science in Information Technology</span>
+                <h3 class="edu-university">CHARUSAT University</h3>
+                <span class="edu-dept">Department of Information Technology</span>
+              </div>
+              <div class="edu-pill">
+                <i class="fa-regular fa-calendar-check"></i>
+                <span>Enrolled Graduate Student</span>
+              </div>
+            </div>
+
+            <div class="edu-card-body">
+              <p>
+                Enrolled in graduate coursework emphasizing applied machine learning algorithms, database engineering, advanced Python programming, mathematical modeling, and distributed systems.
+              </p>
+              
+              <div class="edu-topics">
+                <span class="edu-topic-tag"><i class="fa-solid fa-check"></i> Machine Learning & Pattern Recognition</span>
+                <span class="edu-topic-tag"><i class="fa-solid fa-check"></i> Natural Language Processing</span>
+                <span class="edu-topic-tag"><i class="fa-solid fa-check"></i> Advanced Database Systems & SQL</span>
+                <span class="edu-topic-tag"><i class="fa-solid fa-check"></i> Object-Oriented Software Engineering</span>
+                <span class="edu-topic-tag"><i class="fa-solid fa-check"></i> Data Mining & Feature Engineering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-regular fa-paper-plane"></i> Get in touch</span>
+          <h2 class="section-title">Let's build something interesting.</h2>
+          <p class="section-subtitle contact-lead">
+            Open to AI/ML internships, entry-level opportunities, research collaborations and interesting technical projects.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Cards Column -->
+          <div class="contact-cards-group">
+            
+            <!-- Email Card with Copy Function -->
+            <div class="contact-item-card glass-panel reveal">
+              <div class="contact-card-icon email-color">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="contact-card-details">
+                <span class="contact-label">Email Address</span>
+                <a href="mailto:ADD_EMAIL" class="contact-value js-email-link js-email-text">ADD_EMAIL</a>
+              </div>
+              <button id="copyEmailBtn" class="btn-copy" aria-label="Copy email address to clipboard" title="Copy email">
+                <i class="fa-regular fa-copy"></i>
+                <span class="copy-text">Copy</span>
+              </button>
+            </div>
+
+            <!-- WhatsApp Card -->
+            <div class="contact-item-card glass-panel reveal">
+              <div class="contact-card-icon whatsapp-color">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="contact-card-details">
+                <span class="contact-label">WhatsApp</span>
+                <span class="contact-value">Direct Chat & Inquiries</span>
+              </div>
+              <a href="https://wa.me/ADD_WHATSAPP_NUMBER?text=Hi%20Jeel,%20I%20reviewed%20your%20portfolio%20and%20would%20like%20to%20discuss%20an%20opportunity." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp js-whatsapp-link">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Chat on WhatsApp</span>
+              </a>
+            </div>
+
+            <!-- LinkedIn Card -->
+            <div class="contact-item-card glass-panel reveal">
+              <div class="contact-card-icon linkedin-color">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="contact-card-details">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">Connect Professionally</span>
+              </div>
+              <a href="ADD_LINKEDIN_URL" target="_blank" rel="noopener noreferrer" class="btn btn-glass btn-sm js-linkedin-link">
+                <span>View Profile</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <!-- GitHub Card -->
+            <div class="contact-item-card glass-panel reveal">
+              <div class="contact-card-icon github-color">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="contact-card-details">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">Code Repositories</span>
+              </div>
+              <a href="ADD_GITHUB_URL" target="_blank" rel="noopener noreferrer" class="btn btn-glass btn-sm js-github-link">
+                <span>Visit Repos</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Direct Message Form Column -->
+          <div class="contact-form-card glass-panel reveal">
+            <h3 class="form-title">
+              <i class="fa-regular fa-comment-dots"></i>
+              <span>Send a Message</span>
+            </h3>
+            <p class="form-subtitle">Fill in the fields below to initiate an email directly.</p>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="formName" class="form-label">Your Name <span class="required">*</span></label>
+                <input type="text" id="formName" name="name" class="form-input" placeholder="e.g. Alex Sharma" required>
+              </div>
+
+              <div class="form-group">
+                <label for="formEmail" class="form-label">Your Email <span class="required">*</span></label>
+                <input type="email" id="formEmail" name="email" class="form-input" placeholder="e.g. alex@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="formSubject" class="form-label">Subject <span class="required">*</span></label>
+                <input type="text" id="formSubject" name="subject" class="form-input" placeholder="e.g. AI/ML Internship Opportunity" required>
+              </div>
+
+              <div class="form-group">
+                <label for="formMessage" class="form-label">Message <span class="required">*</span></label>
+                <textarea id="formMessage" name="message" class="form-textarea" rows="4" placeholder="Hello Jeel, I saw your work on..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Compose Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MINIMAL FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="footer-name">JEEL VACHHANI</span>
+        <span class="footer-role">Aspiring AI/ML Engineer • MSc IT @ CHARUSAT University</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="ADD_GITHUB_URL" target="_blank" rel="noopener noreferrer" class="js-github-link">GitHub</a>
+        <a href="ADD_LINKEDIN_URL" target="_blank" rel="noopener noreferrer" class="js-linkedin-link">LinkedIn</a>
+        <a href="mailto:ADD_EMAIL" class="js-email-link">Email</a>
+        <a href="https://wa.me/ADD_WHATSAPP_NUMBER" target="_blank" rel="noopener noreferrer" class="js-whatsapp-link">WhatsApp</a>
+        <a href="assets/resume/Jeel_Vachhani_Resume.pdf" class="js-resume-link" download="Jeel_Vachhani_Resume.pdf">Resume</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 Jeel Vachhani. Hosted with clean HTML5, CSS3 & Vanilla JavaScript on GitHub Pages.</p>
+        <button id="backToTop" class="back-to-top-btn" aria-label="Back to top" title="Scroll to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification System -->
+  <div id="toastNotification" class="toast-notification" role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <span id="toastMessage" class="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <!-- Vanilla JavaScript -->
+  <script src="./script.js"></script>
+</body>
+</html>
